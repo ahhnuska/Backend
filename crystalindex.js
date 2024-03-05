@@ -1,0 +1,11 @@
+const express =require('express')
+const app=express()
+app.set("view engine","ejs")
+app.get ("/",(req,res)=>{
+    console.log("Home page")
+    // res.send("Welcome to the crystal shop")
+    res.render("home",{text:"Home page"})
+})
+const newItemRoute=require('./routes/info')
+app.use('/info',newItemRoute)
+app.listen(3000)
