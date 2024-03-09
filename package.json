@@ -1,20 +1,18 @@
 {
-  "name": "backend",
+  "name": "mongoose",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "script.js",
   "scripts": {
-    "devStart": "nodemon crystalindex.js",
+    "runner": "nodemon script.js ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.9",
-    "express": "^4.18.3"
-  },
-  "devDependencies": {
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1",
     "nodemon": "^3.1.0"
   }
 }
